@@ -14,5 +14,9 @@ app.use(bodyParser.json())
 
 app.use('/api',companyRouter)
 
+app.get('/',(req,res)=>{
+    res.send('Server started')
+})
+
 
 module.exports=app;
